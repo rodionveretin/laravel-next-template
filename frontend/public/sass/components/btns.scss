@@ -1,0 +1,119 @@
+.btn {
+	display: inline-block;
+	border-radius: 8px;
+	text-align: center;
+	font-weight: 400;
+
+	&--x-small {
+		padding: 8px 14px;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	&--small {
+		padding: 12px 18px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	&--medium {
+		padding: 16px 20px;
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	&--large {
+		padding: 20px 24px;
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	&--red {
+		color: $white;
+		background-color: $red800;
+		transition: color 0.25s, background-color 0.25s;
+
+		&:hover {
+			color: $gray800;
+			background-color: $red200;
+			transition: color 0.25s, background-color 0.25s;
+		}
+
+		&:active {
+			color: $gray800;
+			background: $red400;
+			transition: color 0.25s, background-color 0.25s;
+		}
+	}
+
+	&--gray {
+		color: $white;
+		background-color: $gray800;
+		transition: color 0.25s, background-color 0.25s;
+
+		&:hover {
+			background: $gray500;
+			transition: color 0.25s, background-color 0.25s;
+		}
+
+		&:active {
+			background: $gray600;
+			transition: color 0.25s, background-color 0.25s;
+		}
+	}
+
+	&--light-gray {
+		color: $gray800;
+		background-color: $gray100;
+		transition: color 0.25s, background-color 0.25s;
+
+		&:hover {
+			background: $red200;
+			transition: color 0.25s, background-color 0.25s;
+		}
+
+		&:active {
+			background: $red400;
+			transition: color 0.25s, background-color 0.25s;
+		}
+	}
+
+	&--empty {
+		padding: 15px 20px;
+		color: $gray800;
+		border: 1px solid $gray300;
+		transition: border 0.25s;
+
+		&:hover {
+			border: 1px solid $gray500;
+			transition: border 0.25s;
+		}
+
+		&:active {
+			border: 1px solid $gray800;
+			transition: border 0.25s;
+		}
+	}
+
+	&--has-borders {
+		color: $gray800;
+		border: 1px solid $gray800;
+
+		&[disabled] {
+			background: transparent !important;
+			border-color: $gray400;
+			color: $gray400;
+			cursor: default;
+		}
+	}
+
+	&--rounded {
+		border-radius: 24px;
+	}
+
+	&[disabled] {
+		background: $gray100;
+		color: $gray400;
+		cursor: default;
+	}
+}

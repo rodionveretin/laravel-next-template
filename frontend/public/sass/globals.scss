@@ -1,0 +1,101 @@
+@import 'base/fonts';
+@import 'utils/utils';
+
+body {
+ font-family: $fontFamily;
+ font-weight: 500;
+ overflow: auto;
+
+ .lock {
+  overflow: hidden;
+  touch-action: none;
+ }
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+.wrapper {
+ min-height: 100%;
+ display: flex;
+ flex-direction: column;
+ overflow: hidden;
+
+ > main {
+  flex: 1 1 auto;
+ }
+
+ // Fix for sliders
+ > * {
+  min-width: 0;
+ }
+}
+
+main {
+ margin-top: 80px;
+}
+
+[class*='__container'],
+.container {
+ margin: 0 auto;
+
+ @if ($maxWidthContainer>0) {
+  max-width: rem($maxWidthContainer);
+  box-sizing: content-box;
+ } @else {
+  @if ($containerPadding>0) {
+   padding: 0 rem(math.div($containerPadding, 2));
+  }
+ }
+
+ @media (max-width: $pc) {
+  max-width: rem(970);
+ }
+
+ @media (max-width: $tablet) {
+  max-width: rem(750);
+ }
+
+ @media (max-width: $mobile) {
+  max-width: none;
+
+  @if ($containerPadding>0 and $maxWidthContainer>0) {
+   padding: 0 rem($containerPadding);
+  }
+ }
+}
+
+[class*='__container--small'] {
+ margin: 0 auto;
+ max-width: 736px;
+
+ @media (max-width: 767.98px) {
+  max-width: 696px;
+  padding: 0 rem($containerPadding);
+ }
+
+ @media (max-width: 716px) {
+  max-width: 100%;
+ }
+}
+
+[class*='__container--x-small'] {
+ margin: 0 auto;
+ max-width: 544px;
+
+ @media (max-width: 767.98px) {
+  max-width: 696px;
+  padding: 0 rem($containerPadding);
+ }
+
+ @media (max-width: 716px) {
+  max-width: 100%;
+ }
+}
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/btns.scss';
+@import 'components/title.scss';

@@ -1,0 +1,63 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="preloader">
+        <circle cy="96" cx="96" r="8" fill="black" />
+        <g id="line-group-1">
+            <path id="line" d="M112 95.8044C112 104.958 105.132 112 96 112C86.8683 112 80 104.88 80 95.8044" stroke="url(#paint1)" stroke-width="7" stroke-linecap="round" />
+            <animateTransform from="0 96 96" to="360 96 96" attributeName="transform" type="rotate" repeatCount="indefinite" dur="1000ms" />
+        </g>
+        <g id="line-group-2">
+            <path id="line_2" d="M122 95.6822C122 110.557 110.839 122 96 122C81.161 122 70 110.43 70 95.6822" stroke="url(#paint2)" stroke-width="7" stroke-linecap="round" />
+            <animateTransform from="-30 96 96" to="330 96 96" attributeName="transform" type="rotate" repeatCount="indefinite" dur="1010ms" />
+        </g>
+        <g id="line-group-3">
+            <path id="line_3" d="M132 95.5599C132 116.157 116.546 132 96 132C75.4537 132 60 115.98 60 95.5599" stroke="url(#paint3)" stroke-width="7" stroke-linecap="round" />
+            <animateTransform from="-60 96 96" to="300 96 96" attributeName="transform" type="rotate" repeatCount="indefinite" dur="1020ms" />
+        </g>
+        <g id="line-group-4">
+            <path id="line_4" d="M142 95.4377C142 121.756 122.254 142 96 142C69.7463 142 50 121.531 50 95.4377" stroke="url(#paint4)" stroke-width="7" stroke-linecap="round" />
+            <animateTransform from="-90 96 96" to="270 96 96" attributeName="transform" type="rotate" repeatCount="indefinite" dur="1030ms" />
+        </g>
+        <g id="line-group-5">
+            <path id="line_5" d="M152 95.3154C152 127.355 127.961 152 96 152C64.039 152 40 127.081 40 95.3154" stroke="url(#paint5)" stroke-width="7" stroke-linecap="round" />
+            <animateTransform from="-120 96 96" to="240 96 96" attributeName="transform" type="rotate" repeatCount="indefinite" dur="1040ms" />
+        </g>
+        <g id="line-group-6">
+            <path id="line_6" d="M162 95.1932C162 132.954 133.668 162 96 162C58.3317 162 30 132.631 30 95.1932" stroke="url(#paint6)" stroke-width="7" stroke-linecap="round" />
+            <animateTransform from="-160 96 96" to="210 96 96" attributeName="transform" type="rotate" repeatCount="indefinite" dur="1050ms" />
+        </g>
+        <g id="line-group-7">
+            <path id="line_7" d="M172 95.0709C172 138.553 139.376 172 96 172C52.6244 172 20 138.181 20 95.0709" stroke="url(#paint7)" stroke-width="7" stroke-linecap="round" />
+            <animateTransform from="-190 96 96" to="180 96 96" attributeName="transform" type="rotate" repeatCount="indefinite" dur="1060ms" />
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="paint1" x1="112" y1="96" x2="80" y2="96" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="black" stop-opacity="0" />
+            <stop offset="1" stop-color="black" />
+        </linearGradient>
+        <linearGradient id="paint2" x1="70" y1="96" x2="122" y2="96" gradientUnits="userSpaceOnUse">
+            <stop stop-color="black" />
+            <stop offset="1" stop-color="black" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="paint3" x1="60" y1="96" x2="132" y2="96" gradientUnits="userSpaceOnUse">
+            <stop stop-color="black" />
+            <stop offset="1" stop-color="black" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="paint4" x1="50" y1="95" x2="142" y2="95" gradientUnits="userSpaceOnUse">
+            <stop stop-color="black" />
+            <stop offset="1" stop-color="black" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="paint5" x1="40" y1="95" x2="152" y2="95" gradientUnits="userSpaceOnUse">
+            <stop stop-color="black" />
+            <stop offset="1" stop-color="black" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="paint6" x1="30" y1="94" x2="162" y2="95" gradientUnits="userSpaceOnUse">
+            <stop stop-color="black" />
+            <stop offset="1" stop-color="black" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="paint7" x1="20" y1="95" x2="172" y2="95" gradientUnits="userSpaceOnUse">
+            <stop stop-color="black" />
+            <stop offset="1" stop-color="black" stop-opacity="0" />
+        </linearGradient>
+    </defs>
+</svg>

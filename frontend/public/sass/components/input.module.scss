@@ -1,0 +1,168 @@
+.input {
+	&__caption {
+		display: block;
+		margin-bottom: 8px;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 150%;
+		color: $gray800;
+
+		sup {
+			position: relative;
+			top: 2px;
+			color: $red800;
+		}
+	}
+
+	&__field {
+		position: relative;
+	}
+
+	&__value {
+		padding-left: 16px;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 150%;
+		color: $gray800;
+	}
+
+	&__info {
+		margin-bottom: 24px;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 110%;
+		letter-spacing: -0.016em;
+		color: $gray800;
+	}
+
+	&__textarea {
+		height: 131px;
+
+		resize: none;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
+	&__input,
+	&__textarea {
+		width: 100%;
+		padding: 12px 16px;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 150%;
+		color: $gray800;
+		border-radius: 8px;
+		outline: none;
+		background-color: $white;
+		border: 1px solid $gray400;
+		transition: 0.25s background-color;
+
+		&::placeholder {
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 150%;
+			color: $gray400;
+		}
+
+		&:hover {
+			background-color: $gray100;
+			transition: 0.25s background-color;
+		}
+	}
+
+	&__input {
+		&--large {
+			padding: 15px;
+		}
+	}
+
+	&__hint {
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 150%;
+		color: $gray500;
+	}
+
+	&--has-search {
+		position: relative;
+
+		button {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 8px;
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
+.form-input--error {
+	.input__input {
+		padding-right: 48px;
+		border: 1px solid $red800;
+		background: $red200;
+	}
+
+	textarea {
+		border: 1px solid $red800;
+		background: $red200;
+	}
+
+	.input__field {
+		&::after {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+			content: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.3 0.709971C12.91 0.319971 12.28 0.319971 11.89 0.709971L7 5.58997L2.11 0.699971C1.72 0.309971 1.09 0.309971 0.700001 0.699971C0.310001 1.08997 0.310001 1.71997 0.700001 2.10997L5.59 6.99997L0.700001 11.89C0.310001 12.28 0.310001 12.91 0.700001 13.3C1.09 13.69 1.72 13.69 2.11 13.3L7 8.40997L11.89 13.3C12.28 13.69 12.91 13.69 13.3 13.3C13.69 12.91 13.69 12.28 13.3 11.89L8.41 6.99997L13.3 2.10997C13.68 1.72997 13.68 1.08997 13.3 0.709971V0.709971Z' fill='%23E82113'/%3E%3C/svg%3E%0A");
+		}
+	}
+}
+
+.form-input__error-text {
+	margin-top: 4px;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 150%;
+	color: $red800;
+}
+
+.form-input--success {
+	.form-input__error-text {
+		display: none;
+	}
+
+	.input__input {
+		padding-right: 48px;
+		background: $green100;
+		border: 1px solid $green800;
+	}
+
+	textarea {
+		background: $green100;
+		border: 1px solid $green800;
+	}
+
+	.input__field {
+		&::after {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+			content: url("data:image/svg+xml,%3Csvg width='18' height='13' viewBox='0 0 18 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 10.2L2.5 6.70001C2.11 6.31001 1.49 6.31001 1.1 6.70001C0.709995 7.09001 0.709995 7.71001 1.1 8.10001L5.29 12.29C5.68 12.68 6.31 12.68 6.7 12.29L17.3 1.70001C17.69 1.31001 17.69 0.690007 17.3 0.300007C16.91 -0.0899927 16.29 -0.0899927 15.9 0.300007L6 10.2Z' fill='%2307B84E'/%3E%3C/svg%3E%0A");
+		}
+	}
+}
+
+.form-input--textarea {
+	.input__field {
+		&::after {
+			content: none;
+		}
+	}
+}
