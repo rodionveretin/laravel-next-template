@@ -1,0 +1,99 @@
+@use 'sass:math';
+
+//Percent
+@function percent($px, $from) {
+	$result: math.div($px, $from) * 100%;
+	@return $result;
+}
+
+//REM
+@function rem($px) {
+	$result: math.div($px, 16) + rem;
+	@return $result;
+}
+
+//EM
+@function em($px, $current: 16) {
+	$result: math.div($px, $current) + em;
+	@return $result;
+}
+
+@mixin h1 {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 110%;
+	letter-spacing: $letter-spacing;
+}
+
+@mixin h2 {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 110%;
+	letter-spacing: $letter-spacing;
+}
+
+@mixin h3 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 110%;
+	letter-spacing: $letter-spacing;
+}
+
+@mixin h4 {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 110%;
+	letter-spacing: $letter-spacing;
+}
+
+@mixin h5 {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 110%;
+	letter-spacing: $letter-spacing;
+}
+
+@mixin h6 {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 110%;
+	letter-spacing: $letter-spacing;
+}
+
+@mixin text($style: 'medium') {
+	@if ($style== 'medium') {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 150%;
+	} @else if ($style== 'small') {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 150%;
+	} @else if ($style== 'x-small') {
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 150%;
+	}
+}
+
+@mixin nav($style: 'medium') {
+	letter-spacing: $letter-spacing;
+
+	@if ($style== 'large') {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+	} @else if ($style== 'medium') {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 16px;
+	} @else if ($style== 'small') {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+	} @else if ($style== 'x-small') {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+	}
+}

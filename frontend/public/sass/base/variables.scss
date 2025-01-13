@@ -1,0 +1,69 @@
+@use 'sass:math';
+
+// Основные цвета
+$black: #000000;
+$white: #ffffff;
+
+$gray100: #f6f7f8;
+$gray300: #ccd0d8;
+$gray400: #98a1ae;
+$gray500: #6c7788;
+$gray600: #394556;
+$gray800: #151d28;
+
+$red200: #fef4f3;
+$red400: #facac6;
+$red800: #e82113;
+
+$yellow100: #fefaed;
+$yellow400: #fae8ad;
+$yellow800: #f0b800;
+
+$green100: #f2fbf6;
+$green400: #c4eed5;
+$green800: #07b84e;
+
+$blue100: #f2f7fd;
+$blue200: #f2f7fd;
+$blue400: #c3d9f5;
+$blue800: #065fd4;
+
+$purple100: #f6f2fb;
+$purple400: #dbcdf1;
+$purple800: #4c04b8;
+
+$orange100: #fef9f3;
+$orange400: #fde2c9;
+$orange800: #f5841d;
+
+// Минимальная ширина страницы
+$minWidth: 320;
+
+// Ширина полотна (макета)
+$maxWidth: 1920;
+
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 1120;
+
+// Общий отступ у контейнера
+// (30 = по 15px слева и справа, 0 = нет отступа)
+$containerPadding: 16;
+
+// Тип адаптива:
+// 1 = отзывчивость (у контейнера нет брейкпоинтов),
+// 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
+$responsiveType: 2;
+
+// Ширина страбатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+//Прочее
+$transitionHover: all 0.3s;
+
+$pc: em($containerWidth); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: em(767.98); // Телефоны L
+$mobileMedium: em(600); // Телефоны M
+$mobileSmall: em(479.98); // Телефоны S
+
+$fontFamily: 'MuseoSansCyrl', sans-serif;

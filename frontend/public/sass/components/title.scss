@@ -1,0 +1,13 @@
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: -0.016em;
+    color: $gray800;
+
+    &--small {
+        font-size: 28px;
+        line-height: 33.6px;
+        letter-spacing: -0.012em;
+    }
+}

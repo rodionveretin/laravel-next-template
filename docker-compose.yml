@@ -32,7 +32,7 @@ services:
   networks:
    app-network:
     aliases:
-     - mentor-react.local
+     - dashboard.local
 
  nginx:
   image: nginx:latest

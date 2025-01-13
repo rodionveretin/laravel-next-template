@@ -1,0 +1,70 @@
+.checkbox {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+	&:hover {
+		.checkbox__input+.checkbox__caption {
+			&::before {
+				border: 2px solid $gray800;
+				transition: border 0.25s;
+			}
+		}
+	}
+
+	@media (max-width: $mobile) {
+		flex-wrap: wrap;
+		width: calc(100% - 24px);
+	}
+
+	&__input {
+		position: absolute;
+		opacity: 0;
+	}
+
+	&__input+&__caption {
+		position: relative;
+		padding-left: 32px;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 150%;
+		color: $gray800;
+		word-break: break-all;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 7px;
+			transform: translateY(-50%);
+			width: 16px;
+			height: 16px;
+			border: 2px solid $gray400;
+			transition: border 0.25s;
+			border-radius: 2px;
+			content: '';
+		}
+
+		&::after {
+			position: absolute;
+			top: 50%;
+			left: 6px;
+			transform: translateY(-50%);
+			width: 18.3px;
+			height: 18.3px;
+			background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.15001 19.3C2.46668 19.3 1.88768 19.0623 1.41301 18.587C0.937679 18.1123 0.700012 17.5333 0.700012 16.85V3.15C0.700012 2.46666 0.937679 1.88733 1.41301 1.412C1.88768 0.93733 2.46668 0.699997 3.15001 0.699997H16.85C17.5333 0.699997 18.1123 0.93733 18.587 1.412C19.0623 1.88733 19.3 2.46666 19.3 3.15V16.85C19.3 17.5333 19.0623 18.1123 18.587 18.587C18.1123 19.0623 17.5333 19.3 16.85 19.3H3.15001ZM8.60001 13.85C8.75001 13.85 8.90001 13.825 9.05001 13.775C9.20001 13.725 9.33335 13.6333 9.45001 13.5L15.15 7.8C15.35 7.6 15.45 7.35833 15.45 7.075C15.45 6.79166 15.3417 6.54166 15.125 6.325C14.9083 6.10833 14.6543 6 14.363 6C14.071 6 13.825 6.10833 13.625 6.325L8.60001 11.35L6.42501 9.175C6.22501 8.975 5.98335 8.875 5.70001 8.875C5.41668 8.875 5.16668 8.98333 4.95001 9.2C4.73335 9.41666 4.62501 9.66666 4.62501 9.95C4.62501 10.2333 4.73335 10.4833 4.95001 10.7L7.75001 13.5C7.86668 13.6333 8.00001 13.725 8.15001 13.775C8.30001 13.825 8.45001 13.85 8.60001 13.85Z' fill='%23E82113'/%3E%3C/svg%3E%0A");
+			background-position: center;
+			background-size: cover;
+			opacity: 0;
+			transition: opacity 0.25s;
+			content: '';
+		}
+	}
+
+	&__input:checked+&__caption {
+		&::after {
+			opacity: 1;
+			transition: opacity 0.25s;
+		}
+	}
+}

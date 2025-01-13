@@ -1,0 +1,42 @@
+.hidden {
+ display: none !important;
+}
+
+.hidden-opacity {
+ opacity: 0;
+ height: 0 !important;
+}
+
+.lock {
+ overflow: hidden;
+}
+
+.DOM-slider-hidden {
+ height: 0 !important;
+ padding-top: 0 !important;
+ padding-bottom: 0 !important;
+ border-top-width: 0 !important;
+ border-bottom-width: 0 !important;
+ margin-top: 0 !important;
+ margin-bottom: 0 !important;
+ overflow: hidden !important;
+}
+
+.error-msg[hidden] {
+ opacity: 0;
+ height: 0px;
+ transform: scale(0);
+}
+
+.error-msg {
+ font-size: 0.8rem;
+ font-weight: 700;
+ color: darkred;
+ transform-origin: left;
+ transition: all 200ms;
+ display: block;
+}
+
+.accent-text {
+ color: $red800;
+}
