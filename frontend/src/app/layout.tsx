@@ -1,4 +1,7 @@
 import type { Metadata } from 'next';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+
 import '../../public/sass/globals.scss';
 
 export const metadata: Metadata = {
@@ -12,8 +15,14 @@ export default function RootLayout({
  children: React.ReactNode;
 }>) {
  return (
-  <html lang='en'>
-   <body className='wrapper'>{children}</body>
+  <html lang='ru'>
+   <body>
+    <div className='wrapper'>
+     <Header />
+     <main>{children}</main>
+     <Footer />
+    </div>
+   </body>
   </html>
  );
 }
