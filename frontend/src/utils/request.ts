@@ -1,8 +1,10 @@
 import type { JSONValue } from '@/types/JSONValue';
 
+type RequestMethod = 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH';
+
 export async function apiRequest(
  url: string,
- method: string = 'GET',
+ method: RequestMethod = 'GET',
  data: FormData | JSONValue | null = null
 ) {
  const headers: { [key: string]: string } = {};
