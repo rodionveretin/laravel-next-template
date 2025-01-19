@@ -35,4 +35,10 @@ return [
         ],
     ],
 
+    'mgpu' => [
+        'client_id' => env('MGPU_CLIENT_ID'),
+        'client_secret' => env('MGPU_CLIENT_SECRET'),
+        'redirect' => env('MGPU_CLIENT_CALLBACK')
+    ],
+
 ];
